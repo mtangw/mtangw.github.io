@@ -10,36 +10,45 @@ nav.navbar.user-info-navbar {
   background: rgba(255, 255, 255) !important;
   height: 66px;
 }
+
 .night nav.navbar.user-info-navbar {
   background: rgba(0, 0, 0) !important;
 }
-.user-info-navbar .user-info-menu > li {
+
+.user-info-navbar .user-info-menu>li {
   border-right: 0;
   height: 66px;
 }
-.user-info-navbar .user-info-menu > li > a {
+
+.user-info-navbar .user-info-menu>li>a {
   border-bottom: 0px;
   top: -4px;
 }
-.user-info-navbar .user-info-menu > li a[data-toggle="sidebar"] {
+
+.user-info-navbar .user-info-menu>li a[data-toggle="sidebar"] {
   padding-left: 20px;
 }
-.night .user-info-navbar .user-info-menu > li > a,
-.user-info-navbar .user-info-menu > li > a {
+
+.night .user-info-navbar .user-info-menu>li>a,
+.user-info-navbar .user-info-menu>li>a {
   height: 66px !important;
 }
+
 .navbar {
   position: fixed;
   z-index: 1;
 }
+
 a.github-corner {
   position: fixed;
   right: 0;
 }
+
 .navbar.horizontal-menu.navbar-fixed-top {
   background: rgba(255, 255, 255) !important;
   height: 66px;
 }
+
 img.hidden-xs {
   position: absolute;
   left: 20px;
@@ -58,116 +67,143 @@ input#txt {
   border-radius: 50px;
   border: none;
 }
+
 input#txt::placeholder {
   font-size: 18px;
   color: #666;
 }
+
 .night input#txt::placeholder {
   font-size: 18px;
   color: #888;
 }
+
 .night input#txt {
   background: rgba(0, 0, 0, 0.7) !important;
 }
+
 .sousuo {
   padding: 88px 0;
 }
+
 div.search {
   width: 96%;
   /* 搜索框缩短 - 先快后慢 */
   transition: all 0.3s cubic-bezier(0, 0.3, 0.5, 1);
 }
+
 div.search:hover {
   width: 100%;
   /* 搜索框拉长 - 先快后慢 */
   transition: all 0.3s cubic-bezier(0, 0.3, 0.5, 1);
 }
+
 .search-input {
   font-size: 18px !important;
   color: #111 !important;
   padding-left: 50px;
 }
+
 .night .search-input {
   color: #fff !important;
 }
+
 .search-icon {
   left: 5px;
 }
+
 .search-engine {
   background: rgba(255, 255, 255, 0.7) !important;
 }
+
 .night .search-engine {
   background: rgba(0, 0, 0, 0.7) !important;
 }
+
 ul.search-engine-list.search-engine-list_zmki_ul {
   list-style: none;
   padding-left: 26px;
 }
+
 .search-engine-list li {
   background: transparent;
   color: #222;
   font-size: 17px;
   transition: 0.3s;
 }
+
 .night .search-engine-list li {
   color: #ddd;
   background: transparent !important;
   transition: 0.3s;
 }
+
 .search-engine-list li:hover {
   background: #fff;
   border-radius: 30px;
 }
+
 .night .search-engine-list li:hover {
   background: #666 !important;
   border-radius: 30px;
 }
+
 .search-engine-tool {
   font-size: 17px;
   color: black;
 }
+
 .night .search-engine-tool {
   color: white;
 }
+
 strong.search-engine-tit {
   font-size: 18px;
   color: black;
 }
+
 .night strong.search-engine-tit {
   color: white;
 }
-.search-engine-tool > span {
+
+.search-engine-tool>span {
   float: right;
   display: inline-block;
   width: 25px;
   height: 15px;
-  background: url("https://npm.elemecdn.com/hassan-assets/navi/off_on.png")
-    no-repeat 0px 0px;
+  background: url("https://npm.elemecdn.com/hassan-assets/navi/off_on.png") no-repeat 0px 0px;
   cursor: pointer;
   vertical-align: middle;
 }
+
 .search-engine {
   width: 58% !important;
 }
+
 .search-engine-list::after {
   height: 60px !important;
   width: 100px !important;
   top: -60px !important;
 }
+
 /* 搜索图标 */
 .fa-search {
   color: #888;
   transition: .3s;
 }
+
 .fa-search:hover {
   color: #111;
 }
+
 .night .fa-search:hover {
   color: #ddd;
 }
+
 .fa-search:before {
   font-size: 24px;
 }
+
 /* 搜索框 ------------------------------------------------------------ 结束 */
 
 /* 网址卡片 ---------------------------------------------------------- 开始*/
@@ -176,31 +212,38 @@ strong.search-engine-tit {
 .xe-widget.xe-conversations .overflowClip_2 {
   width: calc(100% - 44px);
 }
+
 .xe-widget.xe-conversations {
   border-radius: 12px;
   border: 1px solid #cdd7f1;
   background: rgba(255, 255, 255, 0.7) !important;
 }
+
 .xe-widget.xe-conversations img,
 .xe-widget.xe-conversations .overflowClip_1,
 .xe-widget.xe-conversations .overflowClip_2 {
   transition: .3s;
 }
+
 .xe-widget.xe-conversations:hover img {
   transform: scale(0);
 }
+
 .xe-widget.xe-conversations:hover .overflowClip_1,
 .xe-widget.xe-conversations:hover .overflowClip_2 {
   transform: translateX(-36px);
   width: calc(100% - 8px);
 }
+
 .night .xe-widget.xe-conversations {
   border-color: #4e525c;
   background: rgba(0, 0, 0, 0.7) !important;
 }
+
 body.night .box2:hover {
   background: rgba(0, 0, 0, 0.7) !important;
 }
+
 /* 分类标题 */
 h4.text-gray {
   font-size: 24px;
@@ -209,23 +252,29 @@ h4.text-gray {
   margin: 20px 0 0 0;
   text-align: center;
 }
+
 .col-md-12 h4.text-gray {
   color: #666;
   text-align: left;
 }
+
 .night .col-md-12 h4.text-gray {
   color: #fff;
 }
+
 strong {
   font-size: 18px;
 }
+
 p.overflowClip_2 {
   font-size: 16px;
   color: #808080;
 }
+
 body.night .xe-comment p {
   color: #aaa !important;
 }
+
 .col-xs-1,
 .col-sm-1,
 .col-md-1,
@@ -276,14 +325,17 @@ body.night .xe-comment p {
 .col-lg-12 {
   padding: 0 10px;
 }
+
 /* 标题图标 */
 .linecons-tag:before {
   font-size: 24px;
 }
+
 /* 标题 */
 body.night .xe-comment a {
   color: white;
 }
+
 /* 网址卡片 ---------------------------------------------------------- 结束*/
 
 /* 网站背景 */
@@ -293,14 +345,15 @@ div.bg {
   top: 0;
   width: 100%;
   height: 100%;
-  background: url("https://npm.elemecdn.com/hassan-assets/navi/TortoiseFairyHouse.jpg")
-    no-repeat center center;
-  background-size: cover; /* 填充 */
+  background: url("https://i.postimg.cc/SK5pL4c7/stretched-1920-1080-1227893.jpg") no-repeat center center;
+  background-size: cover;
+  /* 填充 */
 }
+
 .night div.bg {
-  background: url("https://npm.elemecdn.com/hassan-assets/navi/TortoiseFairyHouse_dark.png")
-    no-repeat center center;
-  background-size: cover; /* 填充 */
+  background: url("https://i.postimg.cc/tJH2yntv/stretched-1920-1080-1236174.jpg") no-repeat center center;
+  background-size: cover;
+  /* 填充 */
 }
 
 /* 关于我页面 */
@@ -308,9 +361,11 @@ body.page-body.boxed-container.vsc-initialized {
   /* 禁止滚动 */
   overflow: hidden;
 }
+
 .boxed-container div .main-content {
   background: rgba(255, 255, 255, 0.7) !important;
 }
+
 .night.boxed-container div .main-content {
   background: rgba(0, 0, 0, 0.7) !important;
 }
@@ -322,25 +377,31 @@ body.page-body.boxed-container.vsc-initialized {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 .sidebar-menu-inner.ps-container {
-  background: url(https://npm.elemecdn.com/hassan-assets/navi/LeftColumn.jpg) !important;
+  background: url(https://i.postimg.cc/WzxDxxRM/image.jpg) !important;
   background-attachment: fixed;
 }
+
 .sidebar-menu.collapsed .sidebar-menu-inner {
   position: fixed;
 }
+
 .sidebar-menu .main-menu a {
   border: none;
   transition: 0.3s;
   border-radius: 12px;
 }
+
 .sidebar-menu .main-menu a:hover {
   background: #888;
 }
+
 .sidebar-menu .main-menu a:hover i,
 .sidebar-menu .main-menu a:hover span {
   color: #fff;
 }
+
 span.title,
 span.tooltip-blue,
 span#busuanzi_container_site_pv,
@@ -350,24 +411,29 @@ span#busuanzi_value_site_uv {
   color: #ddd;
   font-size: 17px;
 }
-.sidebar-menu .main-menu li.has-sub > a:before,
+
+.sidebar-menu .main-menu li.has-sub>a:before,
 .sidebar-menu i {
   color: #ddd;
 }
+
 @media screen and (min-width: 768px) {
-  .sidebar-menu.collapsed .main-menu > li:hover > ul {
+  .sidebar-menu.collapsed .main-menu>li:hover>ul {
     border-radius: 0 12px 12px 0;
   }
 }
+
 /* 左侧栏 ------------------------------------------------------------------结束 */
 
 /* 底栏 */
 footer.main-footer.sticky.footer-type-1 {
   background: rgba(255, 255, 255, 0.7) !important;
 }
+
 .night footer.main-footer.sticky.footer-type-1 {
   background: rgba(0, 0, 0, 0.7) !important;
 }
+
 .footer-inner p {
   text-align: center;
   vertical-align: center;
@@ -377,10 +443,12 @@ footer.main-footer.sticky.footer-type-1 {
 i::before {
   font-size: 17px;
 }
+
 /* 展开箭头 */
-.sidebar-menu .main-menu li.has-sub > a:before {
+.sidebar-menu .main-menu li.has-sub>a:before {
   font-size: 17px;
 }
+
 /* 右下角回到首页图标 */
 .night div.go-up a i {
   color: #fff;
@@ -391,13 +459,16 @@ i::before {
   font-size: 16px;
   color: #666;
 }
+
 .night .footer-inner p {
   color: #bbb;
 }
+
 blockquote p a,
 .footer-inner strong {
   color: #6ac6bc;
 }
+
 .night blockquote p a,
 .night .footer-inner strong {
   color: #62cec4;
@@ -408,9 +479,10 @@ blockquote p a,
   padding: 10px 23px 10px 13px;
   border-bottom: none;
 }
+
 /* 左上角功能按钮 */
-body.night .user-info-navbar .user-info-menu > li > a,
-body.night .user-info-navbar .user-info-menu > li > a:hover {
+body.night .user-info-navbar .user-info-menu>li>a,
+body.night .user-info-navbar .user-info-menu>li>a:hover {
   border: none !important;
 }
 
@@ -436,6 +508,7 @@ input#txt {
   cursor: url(https://npm.elemecdn.com/hassan-assets/img/cursor_stitch.png),
     pointer !important;
 }
+
 /* 鼠标图标 -----------------------------------------------------------------------结束 */
 
 /* 滚动条 */
@@ -443,26 +516,28 @@ input#txt {
   width: 12px;
   height: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background-color: #d0f2ee;
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: #222;
-  background-image: -webkit-linear-gradient(
-    45deg,
-    rgba(255, 255, 255, 0.4) 25%,
-    transparent 25%,
-    transparent 50%,
-    rgba(255, 255, 255, 0.4) 50%,
-    rgba(255, 255, 255, 0.4) 75%,
-    transparent 75%,
-    transparent
-  );
+  background-image: -webkit-linear-gradient(45deg,
+      rgba(255, 255, 255, 0.4) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.4) 50%,
+      rgba(255, 255, 255, 0.4) 75%,
+      transparent 75%,
+      transparent);
   border-radius: 5em;
 }
+
 ::-webkit-scrollbar-corner {
   background-color: transparent;
 }
+
 ::-moz-selection {
   color: #fff;
   background-color: #1f1f1f;
