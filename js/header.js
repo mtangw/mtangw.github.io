@@ -3,54 +3,19 @@ function search() {
     var listIndex = -1;
     var hotList = 0;
     var searchData = {
-        "thisSearch": "https://www.baidu.com/s?wd=",
+        "thisSearch": "https://www.google.com",
         "thisSearchIcon": "url('https://npm.elemecdn.com/hassan-assets/navi/search_icon.png')",
         "hotStatus": true,
         "data": [{
-            name: "百度",
-            img: "url('https://npm.elemecdn.com/hassan-assets/navi/search_icon.png') -80px 0px",
-            position: "0px 0px",
-            url: "https://www.baidu.com/s?wd="
-        }, {
             name: "谷歌",
             img: "url('https://npm.elemecdn.com/hassan-assets/navi/search_icon.png')  -105px 0px",
             position: "-40px 0px",
             url: "https://www.google.com/search?q="
         }, {
-            name: "必应",
-            img: "url('https://npm.elemecdn.com/hassan-assets/navi/search_icon.png')  -80px -25px",
-            position: "0px -40px",
-            url: "https://cn.bing.com/search?q="
-        }, {
-            name: "好搜",
-            img: "url('https://npm.elemecdn.com/hassan-assets/navi/search_icon.png') -105px -25px",
-            position: "-40px -40px",
-            url: "https://www.so.com/s?q="
-        }, {
-            name: "搜狗",
-            img: "url('https://npm.elemecdn.com/hassan-assets/navi/search_icon.png') -80px -50px",
-            position: "0px -80px",
-            url: "https://www.sogou.com/web?query="
-        }, {
-            name: "淘宝",
-            img: "url('https://npm.elemecdn.com/hassan-assets/navi/search_icon.png') -105px -50px",
-            position: "-40px -80px",
-            url: "https://s.taobao.com/search?q="
-        }, {
             name: "京东",
             img: "url('https://npm.elemecdn.com/hassan-assets/navi/search_icon.png') -80px -75px",
             position: "0px -120px",
             url: "http://search.jd.com/Search?keyword="
-        }, {
-            name: "天猫",
-            img: "url('https://npm.elemecdn.com/hassan-assets/navi/search_icon.png') -105px -75px",
-            position: "-40px -120px",
-            url: "https://list.tmall.com/search_product.htm?q="
-        }, {
-            name: "1688",
-            img: "url('https://npm.elemecdn.com/hassan-assets/navi/search_icon.png') -80px -100px",
-            position: "0px -160px",
-            url: "https://s.1688.com/selloffer/offer_search.htm?keywords="
         }, {
             name: "知乎",
             img: "url('https://npm.elemecdn.com/hassan-assets/navi/search_icon.png') -105px -100px",
@@ -71,11 +36,6 @@ function search() {
             img: "url('https://npm.elemecdn.com/hassan-assets/navi/search_icon.png') -80px -150px",
             position: "0px -240px",
             url: "https://www.douban.com/search?source=suggest&q="
-        }, {
-            name: "优酷",
-            img: "url('https://npm.elemecdn.com/hassan-assets/navi/search_icon.png') -105px -150px",
-            position: "-40px -240px",
-            url: "https://so.youku.com/search_video/q_"
         }, {
             name: "GitHub",
             img: "url('https://npm.elemecdn.com/hassan-assets/navi/search_icon.png') -80px -175px",
