@@ -3,8 +3,8 @@ function search() {
     var listIndex = -1;
     var hotList = 0;
     var searchData = {
-        "thisSearch": "https://www.google.com",
-        "thisSearchIcon": "url('https://npm.elemecdn.com/hassan-assets/navi/search_icon.png')",
+        "thisSearch": "https://www.google.com/search?q=",
+        "thisSearchIcon": "-40px 0px",
         "hotStatus": true,
         "data": [{
             name: "谷歌",
@@ -12,41 +12,12 @@ function search() {
             position: "-40px 0px",
             url: "https://www.google.com/search?q="
         }, {
-            name: "京东",
-            img: "url('https://npm.elemecdn.com/hassan-assets/navi/search_icon.png') -80px -75px",
-            position: "0px -120px",
-            url: "http://search.jd.com/Search?keyword="
-        }, {
-            name: "知乎",
-            img: "url('https://npm.elemecdn.com/hassan-assets/navi/search_icon.png') -105px -100px",
-            position: "-40px -160px",
-            url: "https://www.zhihu.com/search?type=content&q="
-        }, {
-            name: "微博",
-            img: "url('https://npm.elemecdn.com/hassan-assets/navi/search_icon.png') -80px -125px",
-            position: "0px -200px",
-            url: "https://s.weibo.com/weibo/"
-        }, {
-            name: "B站",
-            img: "url('https://npm.elemecdn.com/hassan-assets/navi/search_icon.png') -105px -125px",
-            position: "-40px -200px",
-            url: "http://search.bilibili.com/all?keyword="
-        }, {
-            name: "豆瓣",
-            img: "url('https://npm.elemecdn.com/hassan-assets/navi/search_icon.png') -80px -150px",
-            position: "0px -240px",
-            url: "https://www.douban.com/search?source=suggest&q="
-        }, {
             name: "GitHub",
             img: "url('https://npm.elemecdn.com/hassan-assets/navi/search_icon.png') -80px -175px",
             position: "0px -280px",
             url: "https://github.com/search?utf8=✓&q="
         }]
     };
-    var localSearchData = localStorage.getItem("searchData");
-    if (localSearchData) {
-        searchData = JSON.parse(localSearchData)
-    }
     function filterChildren(element) {
         var thisText = $(element).contents().filter(function (index, content) {
             return content.nodeType === 3
@@ -170,7 +141,6 @@ function search() {
     $("#hot-btn").click(function () {
         $(this).toggleClass("off");
         searchData.hotStatus = !searchData.hotStatus;
-        localStorage.searchData = JSON.stringify(searchData)
     });
     searchData.hotStatus ? $("#hot-btn").removeClass("off") : $("#hot-btn").addClass("off");
     $(".search-engine-list li").click(function () {
@@ -179,7 +149,6 @@ function search() {
         $(".search-icon").css("background-position", searchData.thisSearchIcon);
         searchData.thisSearch = searchData.data[index].url;
         $(".search-engine").css("display", "none");
-        localStorage.searchData = JSON.stringify(searchData)
     });
     $(".search-icon").css("background-position", searchData.thisSearchIcon);
     $("#search-btn").click(function () {
